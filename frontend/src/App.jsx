@@ -5,7 +5,7 @@ function App() {
   const [item,setItem] = useState([])
   const [link,setLink] = useState('');
   useEffect(()=>{
-    axios.get('http://localhost:3000')
+    axios.get('https://test-w2ww.onrender.com')
     .then((res)=>{
         setItem(res.data);
     })
@@ -13,12 +13,12 @@ function App() {
 
   function subFun(){
     console.log({img:link});
-    axios.post('http://localhost:3000',{img:link});
+    axios.post('https://test-w2ww.onrender.com',{img:link});
    window.location.reload()
   }
   function funDel(id){
     console.log(id);
-    axios.delete(`http://localhost:3000/${id}`);
+    axios.delete(`https://test-w2ww.onrender.com/${id}`);
    window.location.reload()
   }
   return (
