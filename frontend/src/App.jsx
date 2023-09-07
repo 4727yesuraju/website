@@ -14,12 +14,12 @@ function App() {
   function subFun(){
     console.log({img:link});
     axios.post('http://localhost:3000',{img:link});
-   location.reload()
+   window.location.reload()
   }
   function funDel(id){
     console.log(id);
     axios.delete(`http://localhost:3000/${id}`);
-    location.reload()
+   window.location.reload()
   }
   return (
     <>
