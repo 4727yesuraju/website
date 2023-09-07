@@ -31,7 +31,7 @@ function App() {
         {item.map((i,ind)=>{
           return <div className="img">
             <button onClick={()=>funDel(i._id)}>X</button>
-            <img key={ind} src={i.img}  />
+            <img key={ind} src={i.img} alt="img" />
           </div>
         })}
       </div>
